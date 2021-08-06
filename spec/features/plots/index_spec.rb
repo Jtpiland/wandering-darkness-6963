@@ -48,4 +48,5 @@ RSpec.describe 'Plot Index Page' do
       expect(page).to have_content(@plant_5.name)
       expect(page).to have_content(@plant_6.name)
     end
+  end 
 end
