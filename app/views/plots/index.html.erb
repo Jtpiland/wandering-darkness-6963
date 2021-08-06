@@ -1,8 +1,14 @@
+<h1>Plots</h1>
+
 <% @plots.each do |plot| %>
   <section id="plot-<%= plot.id %>">
-    <%= plot.number %>
+    <h2>Plot Number: <%= plot.number %></h2>
     <% plot.plants.each do |plant| %>
-      <p><%= plant.name %></p>
+      <div id="plant-<%= plant.id %>">
+        <p>Plant Name: <%= plant.name %>
+          <%= button_to "Remove Plant From Plot", plant_plot_path(plant, plot), params: {plant_id: plant.id, plot_id: plot.id}, method: :delete %>
+        </p>
+      </div>
     <% end %>
   </section>
 <% end %>

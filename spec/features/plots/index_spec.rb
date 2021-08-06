@@ -63,12 +63,12 @@ RSpec.describe 'Plot Index Page' do
 
   it 'displays a link to remove a plant from the plot and redirects back to the plots idnex page' do
     within "#plant-#{@plant_1.id}" do
-      expect(page).to have_link("Remove Plant From Plot")
+      expect(page).to have_button("Remove Plant From Plot")
 
-      click_link "Remove Plant From Plot"
+      click_button "Remove Plant From Plot"
 
-      expect(current_path).to have_content(plots_path)
-      expect(page).to_not have_content(@plant_1.name)
+      expect(current_path).to eq(plots_path)
     end
+    expect(page).to_not have_content(@plant_1.name)
   end
 end
