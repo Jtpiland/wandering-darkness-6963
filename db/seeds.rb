@@ -25,8 +25,8 @@ Garden.destroy_all
 
 @plant_1 = Plant.create!(name: 'Purple Peppers', description: 'Likes well draining soil', days_to_harvest: 90)
 @plant_2 = Plant.create!(name: 'Tomatoes', description: 'Delicious', days_to_harvest: 60)
-@plant_3 = Plant.create!(name: 'Green Beans', description: 'Grow Tall', days_to_harvest: 95)
-@plant_4 = Plant.create!(name: 'Cucumbers', description: 'Need lots of room to crawl', days_to_harvest: 70)
+@plant_3 = Plant.create!(name: 'Tomatoes', description: 'Grow Tall', days_to_harvest: 95)
+@plant_4 = Plant.create!(name: 'Cucumbers', description: 'Need lots of room to crawl', days_to_harvest: 105)
 @plant_5 = Plant.create!(name: 'Arugala', description: 'Spicy Greens', days_to_harvest: 55)
 @plant_6 = Plant.create!(name: 'Watermelon', description: 'Sweet melons', days_to_harvest: 80)
 

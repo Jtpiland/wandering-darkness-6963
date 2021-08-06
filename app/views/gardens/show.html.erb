@@ -1,0 +1,13 @@
+<h1><%= @garden.name %></h1>
+<section id="garden-<%= @garden.id %>"
+<h3>Plants: <% @garden.unique_plants_under_100_days_in_garden.each do |plant| %></h3>
+              <%= plant.name %></br>
+            <% end %>
+</section>
+
+
+<!-- Attempted Extension...
+<h3>Plant Count in Garden: </h3>
+<%# <% @garden.plant_count.each do |plant, count| %> %>
+  <%# <p><%= plant %>:%> <%#<%= count %></p> %>
+<%# <% end %> -->
