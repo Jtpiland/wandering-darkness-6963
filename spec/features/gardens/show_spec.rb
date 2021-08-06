@@ -33,10 +33,11 @@ RSpec.describe 'The Garden Show Page' do
   # And I see that this list is unique (no duplicate plants)
   # And I see that this list only includes plants that take less than 100 days to harvest
 
-  it 'displays the gardens unique plants that take less than one hundred days to harvest' do
+  it 'displays a particular gardens unique plants that take less than one hundred days to harvest' do
     expect(page).to have_content(@plant_1.name)
     expect(page).to have_content(@plant_2.name)
-    expect(page).to_not have_content(@plant_3.name)
     expect(page).to_not have_content(@plant_4.name)
+    expect(page).to_not have_content(@plant_5.name)
+    expect(page).to_not have_content(@plant_6.name)
   end
 end
